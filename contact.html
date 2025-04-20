@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <style>
+    body {
+      background-color: #000021;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(17, 17, 55);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #a29bfe;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #a29bfe;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #1e2167;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5e5ed3;
+    }
+
+    .contact-info {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    .contact-info a {
+      color: #a29bfe;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="left">Karan's Portfolio</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> 7973610843</p>
+      <p><strong>Email:</strong> <a href="mailto:karankapuria123@gmail.com">karankapuria10mail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/karankapuria" target="_blank">www.linkedin.com/in/karan-kapuria-jaat100/</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/karankapuria" target="_blank">github.com/karankapuria05</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
