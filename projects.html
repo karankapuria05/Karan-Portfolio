@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Karan Kapuria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(0, 0, 33);
+            color: white;
+            padding-top: 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(17, 17, 55);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .projects-container {
+            padding: 40px;
+        }
+
+        .project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e3f;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .project-details {
+            flex: 1;
+            margin-left: 40px;
+        }
+
+        .project-details h2 {
+            text-align: center;
+            color: rgb(170, 107, 228);
+            margin-bottom: 15px;
+        }
+
+        .project-details ul {
+            padding-left: 20px;
+        }
+
+        .project-details li {
+            margin-bottom: 10px;
+        }
+
+        .project-image {
+            flex: 0 0 200px;
+        }
+
+        .project-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Karan's Portfolio</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="projects-container">
+        <div class="project">
+            <div class="project-details">
+                <h2>Sales Performance Dashboard</h2>
+                <ul>
+                    <li>Developed an interactive Tableau dashboard to analyze sales trends across regions, products, and customer segments.</li>
+                    <li>Designed bar charts, line graphs, and scatter plots to visualize key metrics such as sales, profit, and discounts.</li>
+                    <li>Implemented filters and drill-down options for dynamic insights into sales performance.</li>
+                    <li>Optimized dashboard for real-time data analysis and business decision-making.</li>
+                    <li>Published the dashboard on Tableau Public for presentation and sharing.</li>
+                </ul>
+            </div>
+            <div class="project-image">
+                <img src="sales.png" alt="">
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-details">
+                <h2>Simple Library Management System</h2>
+                <ul>
+                    <li>Developed a Library Management System using C++ with linked lists, queues, and file handling.</li>
+                    <li>Implemented core functionalities such as book addition, deletion, searching, and issuing books to users.</li>
+                    <li>Optimized data retrieval and storage using efficient DSA techniques for quick access and updates.</li>
+                    <li>Designed a user-friendly CLI to manage library operations effectively.</li>
+                </ul>
+            </div>
+            <div class="project-image">
+                <img src="slms.png" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
