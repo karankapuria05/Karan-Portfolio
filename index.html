@@ -2,267 +2,276 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan - Kapuria Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan - Kapuria Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(17, 17, 55);
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(17, 17, 55);
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
 
-        nav ul li a:hover {
-            color: rgb(153, 153, 226);
-            font-size: 1.01rem;
-        }
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.01rem;
+    }
 
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
-        }
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
 
-        .left {
-            font-size: 1.5rem;
-        }
+    .left {
+      font-size: 1.5rem;
+    }
 
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 130px 0;
+      flex-wrap: wrap;
+    }
 
-        .firstSection>div {
-            width: 30%;
-        }
+    .firstSection>div {
+      width: 30%;
+    }
 
-        .leftSection {
-            font-size: 3rem;
-        }
+    .leftSection {
+      font-size: 3rem;
+    }
 
-        .leftSection .buttons {
-            padding: 50px 0;
-        }
+    .leftSection .buttons {
+      padding: 50px 0;
+    }
 
-        .leftSection .btn {
-            padding: 12px 24px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-            text-decoration: none;
-        }
+    .leftSection .btn {
+      padding: 12px 24px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-        .rightSection img {
-            width: 80%;
-        }
+    .rightSection {
+      display: flex;
+      justify-content: center;
+    }
 
-        .purple {
-            color: rgb(170, 107, 228);
-        }
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 20px rgba(170, 107, 228, 0.6);
+      transition: transform 0.3s ease-in-out;
+      margin-top: -40px;
+    }
 
-        .text-gray {
-            color: gray;
-        }
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
 
-        #element {
-            color: rgb(170, 107, 228);
-        }
+    .purple {
+      color: rgb(170, 107, 228);
+    }
 
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
+    .text-gray {
+      color: gray;
+    }
 
-        .secondSection h1 {
-            font-size: 1.5rem;
-        }
+    #element {
+      color: rgb(170, 107, 228);
+    }
 
-        .secondSection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
 
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 200px;
-        }
+    .secondSection h1 {
+      font-size: 1.5rem;
+    }
 
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
+    .secondSection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
 
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 200px;
+    }
 
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
 
-        footer {
-            background-color: #0c0c1a;
-        }
+    .vertical-title {
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+    }
 
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
+    .vertical-desc {
+      position: relative;
+      top: 86px;
+      color: gray;
+      width: 150px;
+      font-size: 9px;
+    }
 
-        .footer ul {
-            list-style: none;
-        }
+    footer {
+      background-color: #0c0c1a;
+    }
 
-        .footer>div {
-            width: 223px;
-        }
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
 
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-    </style>
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 223px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Karan Kapuria's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="left">Karan Kapuria's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="purple">Karan Kapuria</span>
-                <div>and I am a </div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <a class="btn" href="https://drive.google.com/file/d/1pJn36lOxiOoO9hxUfReRTlhmoGVzejlx/view" target="_blank">Download CV</a>
-                </div>
-            </div>
-            <div class="rightSection">
-                <img src="bGG.png" alt="Profile Image">
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <span class="text-gray">What I have done</span>
-            <h1>My Journey</h1>
-
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="class.png" alt="">
-                    <div class="vertical-title">
-                        Matriculation (2017-2018)
-                    </div>
-                    <div class="vertical-desc">
-                        Dundlod Public School<br>
-                        Percentage: 75%
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="class.png" alt="">
-                    <div class="vertical-title">
-                        Intermediate (2020-2021)
-                    </div>
-                    <div class="vertical-desc">
-                        Matrix High School<br>
-                        PCM; Percentage: 90%
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="class.png" alt="">
-                    <div class="vertical-title">
-                        Lovely Professional University (2022-Present)
-                    </div>
-                    <div class="vertical-desc">
-                        Bachelor of Technology<br>
-                        Computer Science and Engineering
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-               <div class="footer-rights">
-            karankapuriasportfolio.com | All rights reserved
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Karan Kapuria</span>
+        <div>and I am a </div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a class="btn" href="https://drive.google.com/file/d/1pJn36lOxiOoO9hxUfReRTlhmoGVzejlx/view" target="_blank">Download CV</a>
         </div>
-    </footer>
+      </div>
+      <div class="rightSection">
+        <img src="bGG.png" alt="Profile Image" class="profile-img" />
+      </div>
+    </section>
+    <hr />
+    <section class="secondSection">
+      <span class="text-gray">What I have done</span>
+      <h1>My Journey</h1>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Data Analyst'],
-            typeSpeed: 50,
-        });
-    </script>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="class.png" alt="" />
+          <div class="vertical-title">Matriculation (2017-2018)</div>
+          <div class="vertical-desc">
+            Dundlod Public School<br />
+            Percentage: 75%
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="class.png" alt="" />
+          <div class="vertical-title">Intermediate (2020-2021)</div>
+          <div class="vertical-desc">
+            Matrix High School<br />
+            PCM; Percentage: 90%
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="class.png" alt="" />
+          <div class="vertical-title">Lovely Professional University (2022-Present)</div>
+          <div class="vertical-desc">
+            Bachelor of Technology<br />
+            Computer Science and Engineering
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-rights">karankapuriasportfolio.com | All rights reserved</div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Data Analyst'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
